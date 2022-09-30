@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+<asset>
+<contributor>
+<author>VoxelShop User</author>
+<authoring_tool>VoxelShop V1.7.01</authoring_tool>
+</contributor>
+<created>2016-09-30T16:53:36</created>
+<modified>2016-09-30T16:53:36</modified>
+<unit meter="1" name="meter"/>
+<up_axis>Z_UP</up_axis>
+</asset>
+<library_images>
+<image id="hatch-back_texture0-image" name="hatch-back_texture0-image">
+<init_from>file://hatch-back_texture0.png</init_from>
+</image>
+</library_images>
+<library_effects>
+<effect id="lambert0-fx">
+<profile_COMMON>
+<newparam sid="hatch-back_texture0-surface">
+<surface type="2D">
+<init_from>hatch-back_texture0-image</init_from>
+</surface>
+</newparam>
+<newparam sid="hatch-back_texture0-sampler">
+<sampler2D>
+<source>hatch-back_texture0-surface</source>
+<wrap_s>WRAP</wrap_s>
+<wrap_t>WRAP</wrap_t>
+<minfilter>NEAREST</minfilter>
+<magfilter>NEAREST</magfilter>
+</sampler2D>
+</newparam>
+<technique sid="common">
+<lambert>
+<emission>
+<color>0 0 0 1</color>
+</emission>
+<ambient>
+<color>0 0 0 1</color>
+</ambient>
+<diffuse>
+<texture texcoord="TEX0" texture="hatch-back_texture0-sampler"/>
+</diffuse>
+</lambert>
+</technique>
+</profile_COMMON>
+</effect>
+</library_effects>
+<library_materials>
+<material id="lambert0-material" name="lambert0">
+<instance_effect url="#lambert0-fx"/>
+</material>
+</library_materials>
+<library_geometries>
+<geometry id="Plane-tex-mesh-0" name="Plane-tex">
+<mesh>
+<source id="Plane-tex-mesh-0-positions">
+<float_array count="156" id="Plane-tex-mesh-0-positions-array">-9 -5 11 -9 -5 15 -9 1 15 -9 1 5 -9 -5 5 -9 -5 -5 -9 -7 11 -9 5 -11 -9 -7 5 -9 7 5 -9 1 -13 -9 7 -11 -9 -5 -11 -9 5 -13 -9 -5 -15 -9 -7 -5 -9 1 -15 -9 -7 -11 7 -7 9 7 -5 3 7 -7 3 7 -5 9 7 -7 -5 7 -5 -11 7 -7 -11 7 -5 -5 -7 -7 11 -7 -5 5 -7 -7 5 -7 -5 11 -7 -7 -5 -7 -5 -11 -7 -7 -11 -7 -5 -5 9 -5 9 9 -5 15 9 1 15 9 1 5 9 -5 3 9 -5 -5 9 -7 9 9 5 -11 9 -7 3 9 7 5 9 1 -13 9 7 -11 9 5 -13 9 -5 -11 9 -5 -15 9 -7 -5 9 1 -15 9 -7 -11</float_array>
+<technique_common>
+<accessor count="52" source="#Plane-tex-mesh-0-positions-array" stride="3">
+<param name="X" type="float"/>
+<param name="Y" type="float"/>
+<param name="Z" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<source id="Plane-tex-mesh-0-uvs">
+<float_array count="226" id="Plane-tex-mesh-0-uvs-array">0.124946654 0.55564094 0.04169334 0.55564094 0.04169334 0.8887182 0.75006235 0.61105657 0.8749922 0.44455358 0.9582788 0.61105657 0.83327794 0.44452748 0.79169434 0.61094505 0.79169434 0.44452748 0.75002944 0.8887318 0.79160774 0.77785635 0.75002944 0.77785635 0.79169613 0.33349046 0.79169613 0.4443659 0.8332744 0.4443659 0.78121555 0.88872194 0.74999374 0.33352414 0.69795734 0.66664284 0.7917256 0.3334119 0.83330387 0.4442873 0.83330387 0.3334119 0.9582895 0.3175204 0.91670173 0.3175204 0.93056434 0.44432428 0.8020997 0.66651416 0.7917075 0.5925708 0.83327615 0.4816558 0.9166983 0.31760493 0.9166983 0.44437215 0.9582701 0.44437215 0.83335024 0.8887873 0.87494075 0.8887873 0.81948674 0.7224253 0.75005895 0.88881034 0.7916372 0.88881034 0.7916372 0.7779349 0.416625 0.2777222 0.375 0.11122222 0.333375 0.2777222 0.33327797 0.111194156 0.29169434 0.111194156 0.29169434 0.27761167 0.12495583 0.55564976 0.06252208 0.55564976 0.06252208 0.8887004 0.7916281 0.16672173 0.7499945 0.3332232 0.68754405 0.16672173 0.8332935 0.4445161 0.8055635 0.6109678 0.7916985 0.4445161 0.7917226 0.88878953 0.8333147 0.88878953 0.84371275 0.722421 0.75005895 0.77785635 0.7916372 0.8887318 0.7916372 0.77785635 0.75002944 0.7779349 0.75002944 0.88881034 0.79160774 0.88881034 0.33327797 0.27769473 0.29169434 0.1112772 0.29169434 0.27769473 0.33330566 0.27761167 0.33330566 0.111194156 0.29172203 0.111194156 0.12503935 0.33343127 0.17855175 0.66647077 0.17855175 0.33343127 0.20836693 0.33346474 0.20836693 0.66660094 0.58326614 0.66660094 0.9167256 0.11118968 0.95830387 0.22206509 0.95830387 0.11118968 0.91669613 0.111268245 0.91669613 0.22214365 0.9582744 0.22214365 0.33330852 0.33324406 0.32868636 0.11128968 0.29170883 0.33324406 0.33328676 0.111210495 0.29689363 0.111210495 0.2916946 0.33313456 0.33331022 0.33314842 0.33331022 0.11120356 0.29171288 0.11120356 0.33328712 0.11120356 0.29168978 0.11120356 0.29168978 0.33314842 0.79164 0.7779058 0.75005335 0.866624 0.79164 0.88880354 0.750025 0.77786666 0.750025 0.8887778 0.7916167 0.81483704 0.75005 0.85182965 0.79164165 0.8888 0.79164165 0.7778889 0.33328676 0.16669151 0.2916946 0.27765355 0.45840725 0.33338466 0.58329636 0.47211957 0.58329636 0.33338466 0.5832944 0.8888096 0.5832944 0.75003964 0.20841119 0.75003964 0.9167299 0.44437215 0.9583017 0.31760493 0.9583017 0.44437215 0.9166983 0.44429982 0.9166983 0.31753263 0.9582701 0.31753263</float_array>
+<technique_common>
+<accessor count="113" source="#Plane-tex-mesh-0-uvs-array" stride="2">
+<param name="S" type="float"/>
+<param name="T" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<vertices id="Plane-tex-mesh-0-vertices">
+<input semantic="POSITION" source="#Plane-tex-mesh-0-positions"/>
+</vertices>
+<polylist count="100" material="lambert0-material">
+<input offset="0" semantic="VERTEX" source="#Plane-tex-mesh-0-vertices"/>
+<input offset="1" semantic="TEXCOORD" set="0" source="#Plane-tex-mesh-0-uvs"/>
+<vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+<p>0 0 1 1 2 2 3 3 0 4 2 5 0 6 3 7 4 8 3 9 5 10 4 11 6 12 0 13 4 14 7 15 5 16 3 17 6 18 4 19 8 20 3 21 9 22 7 23 7 24 10 25 5 26 9 27 11 28 7 29 12 30 5 31 10 32 7 33 13 34 10 35 12 36 10 37 14 38 15 12 5 13 12 14 10 39 16 40 14 41 15 18 12 19 17 20 18 18 19 19 20 20 18 12 21 13 19 14 22 18 23 19 24 20 22 12 25 13 23 14 27 19 26 18 28 20 29 13 26 12 27 14 31 19 30 18 32 20 33 13 30 12 31 14 35 43 34 42 36 44 34 46 37 45 36 47 37 49 34 48 38 50 38 52 39 51 37 53 34 13 40 12 38 14 39 16 41 15 37 17 38 19 40 18 42 20 43 22 37 21 41 23 39 26 44 25 41 24 45 28 43 27 41 29 46 34 41 33 44 35 39 31 47 30 44 32 44 37 47 36 48 38 39 13 49 12 47 14 50 40 44 39 48 41 47 19 49 18 51 20 23 19 51 18 24 20 47 13 51 12 23 14 11 55 41 54 7 56 45 58 41 57 11 59 12 19 32 18 17 20 31 13 32 12 12 14 13 55 44 54 10 56 46 58 44 57 13 59 16 61 48 60 14 62 50 64 48 63 16 65 4 19 28 18 8 20 27 13 28 12 4 14 19 19 42 18 20 20 38 13 42 12 19 14 49 18 25 19 22 20 49 12 39 13 25 14 30 18 5 19 15 20 30 12 33 13 5 14 35 66 2 67 1 68 35 69 36 70 2 71 26 18 0 19 6 20 26 12 29 13 0 14 40 18 21 19 18 20 40 12 34 13 21 14 37 72 9 73 3 74 37 75 43 76 9 77 48 78 23 79 14 80 23 81 31 82 14 83 48 84 47 85 23 86 31 87 12 88 14 89 23 54 33 55 31 56 23 57 25 58 33 59 33 10 25 11 19 9 39 54 19 55 25 56 33 90 19 91 27 92 39 57 38 58 19 59 19 93 21 94 27 95 33 57 27 58 4 59 21 96 29 97 27 98 33 54 4 55 5 56 29 99 21 82 35 100 21 39 34 40 35 41 29 79 35 80 1 78 29 86 1 84 0 85 51 18 22 19 24 20 51 12 49 13 22 14 42 18 18 19 20 20 42 12 40 13 18 14 28 18 6 19 8 20 28 12 26 13 6 14 32 18 15 19 17 20 32 12 30 13 15 14 10 55 50 54 16 56 44 58 50 57 10 59 2 102 37 101 3 103 36 105 37 104 2 106 9 108 45 107 11 109 43 111 45 110 9 112 7 55 46 54 13 56 41 58 46 57 7 59</p>
+</polylist>
+</mesh>
+</geometry>
+</library_geometries>
+<library_visual_scenes>
+<visual_scene id="Scene" name="Scene">
+<node id="hatch-back.hatch-back" name="hatch-back.hatch-back" type="NODE">
+<translate sid="location">0 0 0</translate>
+<rotate sid="rotationZ">0 0 1 0</rotate>
+<rotate sid="rotationY">0 1 0 0</rotate>
+<rotate sid="rotationX">1 0 0 0</rotate>
+<scale sid="scale">0.05 0.05 0.05</scale>
+<instance_geometry name="hatch-back" sid="hatch-back" url="#Plane-tex-mesh-0">
+<bind_material>
+<technique_common>
+<instance_material symbol="lambert0-material" target="#lambert0-material">
+<bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="TEX0"/>
+</instance_material>
+</technique_common>
+</bind_material>
+</instance_geometry>
+</node>
+</visual_scene>
+</library_visual_scenes>
+<scene>
+<instance_visual_scene url="#Scene"/>
+</scene>
+</COLLADA>
